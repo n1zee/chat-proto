@@ -1,0 +1,35 @@
+.container {
+  border-top: 1px solid var(--color-border);
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 16px;
+  min-height: 36px;
+  max-height: 120px;
+  font-size: 15px;
+  line-height: 1.4;
+  resize: none;
+}
+
+.input::placeholder {
+  color: var(--color-text-secondary);
+}
+
+.sendButton {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  transition: background-color 0.15s, opacity 0.15s;
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+}
+
+.sendButton:hover {
+  color: var(--color-primary-hover);
+}
